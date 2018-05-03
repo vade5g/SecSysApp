@@ -1,0 +1,273 @@
+#bodyid {
+	font : 16px "Poppins" , sans-serif;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	z-index: 0;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url('../../images/fishing_background_5.jpg');
+}
+
+a {
+  	color: #00B7FF;
+}
+
+.loginpad {
+	padding-top: 20%;
+}
+
+/* ----------------------SHARED GENERAL ----------------------*/
+
+.blue-background {
+	background-color: rgba(13, 14, 76, 1);
+}
+
+.black-background {
+	background-color: black;
+}
+
+.white-text {
+	color: white;
+}
+
+.orange-text {
+	color: #ffc175
+}
+
+.padding-bottom {
+	padding-bottom: 30px;
+}
+
+#brand:hover {
+	color: #ffc175
+}
+
+/* ----------------------MENU VIEW ----------------------*/
+.menu-button {
+	height: 200px;
+	border-radius: 5px;
+	border: 1px solid white;
+	color: #474747;
+	overflow: hidden;
+	background-size: contain;
+	font-size: 24px;
+}
+.menu-button:hover {
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05) inset, 0px 0px 20px rgba(255, 255, 255, 0.8);
+	text-decoration: none;
+}
+
+#home-navbar {
+	white-space: nowrap;
+	border-radius: 0px;
+	margin-bottom: 25px;
+	border-bottom: 1px solid white;
+}
+#home-navbar li {
+	display: inline-block;
+}
+#home-navbar li a {
+
+}
+
+#my-maps-button {
+	background: url(../../images/rahajarvi_map3.png); 
+	background-repeat: no-repeat;
+    background-position: left top;
+}
+#gather-data-button {
+	background: url(../../images/sonar_thumbnail_4.png);
+	background-repeat: repeat;
+    background-position: left top;
+}
+#online-maps-button {
+	color: #333333;
+	background: url(../../images/map_thumbnail_5.jpg);
+	background-repeat: no-repeat;
+    background-position: left top;
+}
+
+#wifi-icon {
+	left: 50%;
+	margin-top: 65px;
+	margin-left: -50px;
+	position: absolute;
+	width: 100px;
+	height: 130px;
+	background: url(../../images/wifi_icon_1.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: 0.8;
+}
+#no-wifi-icon {
+	margin-top: 40px;
+	margin-left: -60px;
+	width: 120px;
+	height: 120px;
+	background: url(../../images/no_wifi_icon_2.png);
+	background-size: contain;
+}
+#save-icon {
+	top: 80px;
+	margin-left: -25px;
+}
+
+.wifi-icon-shared {
+	left: 50%;
+	position: absolute;
+	overflow: hidden;
+	z-index: 2;
+	opacity: 0.6;
+}
+
+/* ---------------------- SONAR VIEW --------------------- */
+#surface-line {
+	box-shadow: 0 0 15px rgba(81, 203, 238, 1);
+	position: fixed;
+	top: 50px;
+	width: 100%;
+	height: 5px;
+	background-color: rgb(82, 140, 234);
+}
+#surface-line-max {
+	position: fixed;
+
+}
+
+#radar-indicator {
+	position: fixed;
+	top: 36px;
+	height: 30px;
+	width: 30px;
+	border-radius: 20px;
+	background-color: rgb(200, 0, 0);
+	box-shadow: 0 0 49px rgba(255, 0, 0, 1);
+	z-index: 3;
+}
+#radar-indicator p {
+	color: white;
+	margin-top: -26px;
+	margin-left: -9PX;
+	font-size: 22px;
+}
+
+.measuring-line {
+	position: fixed;
+	top: 48px;
+	width: 2px;
+	background-color: white;
+	z-index: 2;
+}
+
+.measuring-line-first {
+	margin-left: 0px;
+}
+.measuring-line-second {
+	top: 50px;
+}
+
+.measuring-cross-line {
+	background-color: white;
+	width: 60px;
+	height: 2px;
+}
+.measuring-cross-line p {
+	color: white;
+	text-align: center;
+}
+#scrolling-floor-container {
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 0px;
+	margin-left: -50px ;
+	z-index: 1;
+}
+#scrolling-floor {
+	position: fixed;
+	bottom: 0;
+	overflow: hidden;
+	height: 74px;
+	width: 6096px;
+	margin-bottom: 0px;
+}
+.photobanner-img {
+	margin-left: -5px;
+	z-index: 1;
+}
+/*keyframe animations*/
+.first {
+	-webkit-animation: bannermove 30s linear infinite;
+	   -moz-animation: bannermove 30s linear infinite;
+	    -ms-animation: bannermove 30s linear infinite;
+	     -o-animation: bannermove 30s linear infinite;
+	        animation: bannermove 30s linear infinite;
+} 
+
+.fish-indication {
+	z-index: 3;
+	position: absolute;
+	display: block;
+	background: url(../../images/nemofinder_fish_indicator_5.png);
+	background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#fishContainer {
+	position: absolute;
+	top: 50px;
+	left: 0px;
+}
+
+@keyframes bannermove {  0% { margin-left: 0px;}  100% { margin-left: -2032px;} } 
+@-moz-keyframes bannermove {  0% {    margin-left: 0px;  }  100% {    margin-left: -2032px;  }  }
+@-webkit-keyframes bannermove {  0% {    margin-left: 0px;  }  100% {    margin-left: -2032px;  }  }
+@-ms-keyframes bannermove {  0% {    margin-left: 0px;  }  100% {    margin-left: -2032px;  }  }
+@-o-keyframes bannermove {  0% {    margin-left: 0px;  }  100% {    margin-left: -2032px;  }  }
+
+
+/* ---------------------- DRONE VIEW --------------------- */
+#homebtns {
+	font-size:30px; 
+	margin: auto;
+	vertical-align: middle;
+}
+
+div.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+div#unityPlayer {
+	align-self: center;
+	cursor: default;
+	height: 500px;
+	width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.broken, div.missing {
+	margin: auto;
+	position: relative;
+	top: 50%;
+	width: 193px;
+}
+
+#map {
+    width: 70%;
+    height: 500px;
+    background-color: grey;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*------------------------------------------------------------- */
+
+/*  Onlinemap css  */
+.onlinemaptext {
+	width: 20%;
+}
